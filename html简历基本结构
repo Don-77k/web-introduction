@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 导入简历图像 -->
+    <img src="./don.jpg" alt="resume img " />
+    <!-- 姓名 -->
+    <div class=" name">
+        <p>唐</p>
+    </div>
+    <!-- 个人描述 -->
+    <div class="describe">
+      <ul>
+        <li>一个热血青年</li>
+        <li>一个咸鱼吉他手</li>
+        <li>一个沉默的羔羊</li>
+      </ul>
+    </div>
+    <p class="tip"><span>前端工程师</span></p>
+
+    <!-- 会的前端技术 -->
+    <div class="technology">
+       <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jQuery</li>
+        <li>php</li>
+        <li>webGL</li>
+       </ul> 
+    </div>
+    <p class="wish"><span>热爱前端工作的前端工程师，希望能够在前端工作中发光发热。</span></p>
+    <!--项目经历  -->
+    <div>
+        <p class="experience"><span>项目经历</span></p>
+        在线简历：
+        <a href="http：//www.don.com ">don.com</a>
+        <p class="polyvia"><span>Polyvia</span></p>
+        <ul>
+            <li><a >图像处理</a></li>
+            <li><a >webGL</a></li>
+            <li><a >着色器</a></li>
+            <li><a >JavaScript</a></li>
+            <p> Low.ploy风格视频、图像处理</p>
+        </ul>
+
+         <!--实习经历  -->
+    <div>
+        <p class="practice"><span>实习经历</span></p>
+        <p class="inter"><span>英特尔</span></p>
+        
+        <ul>
+            <li><a >webGL</a></li>
+            <li><a >three.js</a></li>
+            <li><a >web Audio</a></li>
+            <li><a >JavaScript</a></li>
+            <p> 开发了一款三维打砖游戏</p>
+        </ul><div>
+        <p class="practice"><span>实习经历</span></p>
+        <p class="inter"><span>英特尔</span></p>
+        
+        <ul>
+            <li><a >webGL</a></li>
+            <li><a >three.js</a></li>
+            <li><a >web Audio</a></li>
+            <li><a >JavaScript</a></li>
+            <p> 开发了一款三维打砖游戏</p>
+        </ul>
+      <!-- 教育背景 -->
+        <div>
+            <p class="practice"><span>教育背景</span></p>
+            <p class="inter"><span>长江大学</span></p>
+            <p class="data">2019年至2020年</p>
+            <p>本科生，软件工程专业</p>
+    </div>
+</body>
+</html>
