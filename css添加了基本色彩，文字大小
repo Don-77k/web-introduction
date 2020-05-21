@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: lightsteelblue;
+     
+        height: 2000px;
+        width: 1200px;
+        border: solid green ;
+        position: fixed;
+    }
+    
+    .name{
+        font-size: 30px;
+        color: white;
+    }
+    .resume img{
+        height:80px ;
+        width: 88px;
+        
+    }
+    .cricle img{
+      
+        height: 80px;
+        width: 80px;
+        margin-top: -50px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .describe ul{
+        color:teal;
+    }
+    .describe p{
+        font-size: 25px;
+        color:teal;
+       
+    }
+    .technology ul{
+        font-size:20px ;
+        color: white;
+        text-align: center;
+       
+    }
+    .technology ul li{
+        list-style: url(down.png) inside square;
+        height: 1em;
+        width: 1em;
+    }
+    .technology p{
+        font-size: 25px;
+        color:teal;
+       
+    }
+    .box1 .experience {
+        font-size: 30px;
+    }
+    .box1 a{
+        text-decoration: none;
+        color: teal;
+    }
+    .box1 .polyvia{
+        font-size: 30px;
+        color: teal;
+    }
+    .box1 .technology0 span{
+        color: white;
+        border: solid 1px black;
+        background-color: turquoise
+
+    }
+
+    .box2 .practice{
+        font-size: 30px;
+    }
+    .box2 .inter{
+        font-size: 25px;
+        color: teal;
+
+    }
+    .box2 .technology1 span{
+        color: white;
+        border: solid 1px black;
+        background-color: turquoise;
+
+    }
+    .box3 .eduction{
+        font-size: 30px;
+    }
+    .box3 .university{
+        font-size: 25px;
+        color: teal;
+    }
+    .box3 .data{
+        font-size: 15px;
+        color: teal;
+    }
+</style>
+<body>
+    <!-- 导入简历图像 -->
+    <img src="./don.jpg" alt="resume img " />
+    <!-- 导入圆框 -->
+    
+    <!-- 姓名 -->
+    <div class=" name">
+        <p>唐</p>
+    </div>
+    <!-- 个人描述 -->
+    <div class="describe">
+      <ul>
+        <li>一个热血青年</li>
+        <li>一个咸鱼吉他手</li>
+        <li>一个沉默的羔羊</li>
+      </ul>
+      <p>前端工程师</p>
+    </div>
+    
+
+    <!-- 会的前端技术 -->
+    <div class="technology">
+       <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jQuery</li>
+        <li>php</li>
+        <li>webGL</li>
+       </ul> 
+       <p>热爱前端工作的前端工程师，希望能够在前端工作中发光发热。</p>
+    </div>
+    
+    <!--项目经历  -->
+    <div class="box1">
+        <p class="experience">项目经历</p>
+        <span>在线简历：</span> 
+        <a href="http：//www.don.com ">don@.com</a>
+        <p class="polyvia">Polyvia</p>
+        <p class="technology0">
+            <span>webGL</span>
+            <span>着色器</span>
+            <span>JavaScript</span>
+            <span>图像处理</span>
+        </p>
+        <p>Low.ploy风格视频、图像处理</p>
+        </div>
+
+         <!--实习经历  -->
+    <div class="box2">
+        <p class="practice"><span>实习经历</span></p>
+        <p class="inter"><span>英特尔</span></p>
+        <!-- 用p+span将文字横向排列 -->
+
+        <p class="technology1">
+            <span>webGL</span>
+            <span>three.js</span>
+            <span>web Audio</span>
+            <span>JavaScript</span>
+        </p>
+      
+        <p> 开发了一款三维打砖游戏</p>
+        </div>
+      <!-- 教育背景 -->
+        <div class="box3">
+            <p class="eduction"><span>教育背景</span></p>
+            <p class="university"><span>椰子大学</span></p>
+            <p class="data">2019年至2020年</p>
+            <p>本科生，软件工程专业</p>
+    </div>
+</body>
+</html>
