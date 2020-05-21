@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
@@ -8,27 +8,15 @@
 <style>
     body{
         background-color: lightsteelblue;
-     
+        border: aquamarine solid ;
         height: 2000px;
         width: 1200px;
-        border: solid green ;
-        position: fixed;
+      
     }
     
     .name{
         font-size: 30px;
         color: white;
-    }
-    .resume img{
-        height:80px ;
-        width: 88px;
-        
-    }
-    .cricle img{
-      
-        height: 80px;
-        width: 80px;
-        margin-top: -50px;
     }
     ul{
         list-style-type: none;
@@ -47,17 +35,13 @@
         text-align: center;
        
     }
-    .technology ul li{
-        list-style: url(down.png) inside square;
-        height: 1em;
-        width: 1em;
-    }
+   
     .technology p{
         font-size: 25px;
         color:teal;
        
     }
-    .box1 .experience {
+    .box1 .experience , .box2 .practice , .box3 .eduction{
         font-size: 30px;
     }
     .box1 a{
@@ -68,29 +52,17 @@
         font-size: 30px;
         color: teal;
     }
-    .box1 .technology0 span{
+    .box1 .technology0 span,.box2 .technology1 span{
         color: white;
         border: solid 1px black;
         background-color: turquoise
 
     }
 
-    .box2 .practice{
-        font-size: 30px;
-    }
     .box2 .inter{
         font-size: 25px;
         color: teal;
 
-    }
-    .box2 .technology1 span{
-        color: white;
-        border: solid 1px black;
-        background-color: turquoise;
-
-    }
-    .box3 .eduction{
-        font-size: 30px;
     }
     .box3 .university{
         font-size: 25px;
