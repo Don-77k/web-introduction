@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+        <div class="aside-left">
+            <h1>简历</h1>
+    </div>
+    <div class="aside-right">
+             <h2>基本信息</h2>
+        <div class="information">
+        <ul>
+            <li>姓名 </li>
+            <span>张三</span>
+            <li>性别</li>
+            <span>男</span>
+            <li>应聘职位 </li>
+            <!-- 这里有一个很困扰我的地方，因为块元素浮动后下面的行内
+                元素H2会自动贴在右侧；但是对H2浮动后，块元素相当于等于0，
+                H2的外边距自动覆盖了浮动的块元素，因此H2的外边距显示
+                不出来。因此我进行了换行，保留了H2的行内属性，可能有更好的
+                解决方案，但是使用换行法是我目前能够想到让其达到我理想效果的
+                最简便方法。
+            -->
+            <span>Web前端工程师</span><br>
+        </ul>
+        </div>
+        <div class="cantact-way">
+            <h2>联系方式</h2>
+            <ul>
+                 <li>手机：</li>
+                 <span>1231231231</span>
+                 <li>Email：<a href="joinefe@baidu.com">joinefe@baidu.com</a></li>
+            <li>个人主页：<a href="Github">Github</a></li><br><br>
+        </ul>
+        </div>
+        <h2>能力描述</h2>
+        <div class="capacity">
+            
+            <ul>
+                <li>技术能力</li>
+                <p>熟练掌握HTML,CSS,javaScript</p><br>
+                <li>综合能力</li>
+                <p>良好的沟通，主动积极，努力勤奋</p>
+        </ul>
+        </div>
+        <div class="education">
+            <h2>教育经历</h2>
+            <ul>
+                 <li>本科</li>
+                 <p>百度前端技术学院小微学院</p><br>
+                 <li>研究生</li>
+                <p>百度前度技术学院大斌学院</p>
+             </ul>
+        </div>
+        <div class="exparience">
+            <h2>项目经历</h2>
+            <ul>
+                <li>小度小度</li>
+                <p>作为前端工程师角色参与了ABC组件的开发</p><br>
+                <li>SAN Doc</li>
+                <p>作为文档工程师参与了SAN Doc编写</p>
+             </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
