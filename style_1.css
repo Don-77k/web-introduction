@@ -1,0 +1,61 @@
+
+body{
+    width: 100%;
+    max-width:1500px;
+    height: 100%;
+    max-height: 1500px;
+    margin: auto;
+}
+.aside-left:nth-of-type(1){
+    width:30%;
+    height: 1500px;
+    background-color:#37b0f3;
+    float: left;
+}
+.aside-left h1{
+    font-size: 100px;
+    color: white;
+    /* 设置行内元素居中 */
+    text-align: center;
+    margin-top: 150px;
+}
+.aside-right:nth-of-type(2){
+    width: 70%;
+    height: 1500px;
+    float: left;
+    background-color: lavenderblush;
+    overflow: auto;
+}
+h2{
+    font-size: 50px;
+    margin: 40px;
+    clear: both;
+}
+li{
+    list-style: none;
+}
+.information  li{
+    font-weight:900 ;
+    float: left;
+    margin: 5px;
+}
+.information  span{
+    float: left;
+    margin: 5px 30px 5px 5px;
+}
+.cantact-way  li{
+    font-weight:900 ;
+    float: left;
+    margin: 5px;
+}
+.cantact-way  span{
+    float: left;
+    margin: 5px 30px 5px 5px;
+}
+.cantact-way ul li a{
+    margin: 5px 30px 5px 5px;
+}
+.capacity li,.education li,.exparience li{
+    font-weight: 900;
+}
+
