@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-top: 0;
+        }
+        .header{
+            width: 100%;
+            background: rgb(54, 53, 53);
+        }
+        .header .fixed-width{
+            width: 960px;
+            margin: auto;
+        }
+        .header p{
+            display: inline-block;
+            margin: 15px 0;
+            color: white;
+        }
+        .link {
+            float: right;
+        }
+        .link a{
+            font-size: 3px;
+            color: white;
+        }
+        .link a:hover{
+            color: red;
+        }
+        .main{
+            width: 100%;
+            height: 200px;
+            background: rgb(102,187,51);
+        }
+        .Banner{
+            position: relative;
+            width: 960px;
+            height: 200px;
+            margin: auto;
+        }
+        .Banner ul{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .Banner ul li{
+            display: inline;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 5px;
+            border: 1px solid black;
+        }
+        .Banner li:focus,.Banner li:hover{
+            background: white;
+            padding-top: 15px ;
+        }
+        .navigation{
+            position: relative;
+            height: 60px;
+            width: 100%;
+            border-bottom: 1px solid rgb(184, 194, 204);
+        }
+        .box{
+            width: 960px;
+            margin: auto;
+        }
+        .navigation ul{
+            position: absolute;
+            bottom: 0;
+            margin: -1px;
+        }
+        .navigation ul li{
+            display: inline-block;
+            background-color: rgba(172, 172, 172, 0.3);
+            padding: 8px;
+            border: 1px solid rgb(184, 194, 204);
+            border-radius: 0.8em 0.8em 0 0;
+        }
+        .navigation ul li:hover, .navigation ul li:focus{
+            background: white;
+            border-bottom:1px solid white;
+        }
+        .content1{
+            display: grid;
+            width: 960px;
+            margin: auto;
+            grid-template-columns: repeat(2,36%) 28%;
+           
+        }
+        .content-1,.content-2,.content-3,.content-4,.content-5,.content-6,.content-7,.content-8,.content-9,.content-10{
+            padding: 80px;
+            border: 1px solid rgb(184, 194, 204);
+            margin-top: 10px;
+        }
+        .content-1,.content-2,.content-4,.content-5,.content-6,.content-8,.content-9{
+            margin-right: 10px;
+        }  
+        .content2{
+            display: grid;
+            width: 960px;
+            margin: auto;
+            grid-template-columns: repeat(4,25%);
+           
+        }
+        .content3{
+            display: grid;
+            width: 960px;
+            margin: auto;
+            grid-template-columns: repeat(3,33.33%)  ;
+           
+        }
+        .footer{
+            height: 200px;
+            width: 100%;
+            background: rgb(109, 108, 108);
+            margin-top: 20px;
+        }
+        .footer p{
+            text-align: center;
+        }
+        .footer p a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="fixed-width">
+            <p>Logo</p>
+            <div class="link">
+                <a href="#">Github</a>
+                <a href="#">Register</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="Banner">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+    </div>
+        <div class="navigation">
+            <div class="box">
+                <ul>
+                    <li>HOME</li>
+                    <li>PROFILE</li>
+                    <li>ABOUT</li>
+                </ul>         
+            </div>
+        </div>
+        <div class="content1">
+            <div class="content-1">
+                <p>This is Content 1</p>
+            </div>
+            <div class="content-2">
+                <p>MaybeContent 2</p>
+            </div>
+            <div class="content-3">
+                <p>content 3</p>
+            </div>
+        </div>
+            <div class="content2">
+                <div class="content-4">
+                     <p>conntent 4</p>
+                </div>
+                <div class="content-5">
+                    <p>conntent 5</p>
+                </div>
+                <div class="content-6">
+                    <p>conntent 6</p>
+                </div>
+                <div class="content-7">
+                    <p>conntent 7</p>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="content-8">
+                    <p>conntent 8</p>
+                </div>
+                <div class="content-9">
+                    <p>conntent 9</p>
+                </div>
+                <div class="content-10">
+                    <p>conntent 10</p>
+                </div>
+            </div>
+    <div class="footer">
+           <p> <a href="www.baidu.com">© 2018 life.baidu.com</a></p>
+    </div>
+</body>
+</html>
