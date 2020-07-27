@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+.menu{
+    width: 350px;
+    height: 100%;
+    float: left;
+    position: relative;
+
+}
+.menu-left{
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: rgb(29,37,49);
+}
+.big-img li{
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+    list-style-type: none;
+}
+.small-img{
+    width: 100px;
+    margin: 20px;
+    margin-left: 25px;
+    position: absolute;
+    bottom: 0;
+}
+.small-img li{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    list-style-type: none;
+}
+/* 右侧菜单 */
+.menu-right{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    margin-left: 100px;
+    background-color: rgb(34,44,60);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.menu-stting-1{
+    width: 200px;
+    flex: 1;
+    overflow: hidden;
+}
+.menu-s-1-option p,.menu-s-2-option2 p{
+    font-size: 10px;
+    font-weight: 800;
+    display: inline-block;
+    color: rgb(100, 106, 117);
+}
+.menu-s-1-option img,.menu-s-2-option2 img{
+    float: right;
+}
+.menu-s-1-list ul{
+    list-style-type: none;
+    color:rgb(144,154,167) ;
+}
+.menu-s-1-list li{
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.hint img{
+    float: right;
+    position: relative;
+    margin-top: -4px;
+}
+.hint span{
+    position: absolute;
+    color: white;
+    right: 32px;
+    z-index: 2;
+}
+.menu-stting-2{
+    width: 200px;
+    flex: 1;
+    overflow: hidden;
+}
+.menu-s-2-option2 p,.menu-s-2-option2 img{
+    margin-top: 30px;
+}
+.listimg ul{
+    list-style-type: none;
+    float: left;   
+}
+.listimg ul li{
+    margin: 20px 0;
+}
+.menu-s-2-list2 ul{
+    list-style-type: none;
+    color:rgb(144,154,167) ;
+}
+.menu-s-2-list2 li{
+    margin: 20px 30px;
+}
+.menu-stting-3{
+    width: 200px;
+    flex: 1;
+    overflow: hidden;
+}
+.menu-s-3-option3{
+    margin-top: 30px;
+}
+.menu-s-3-option3 p{
+    font-size: 10px;
+    font-weight: 800;
+    display: inline-block;
+    color: rgb(100, 106, 117);
+}
+.menu-s-3-option3 img{
+    float: right;
+}
+.menu-s-img{
+    width: 20%;
+    height: 100%;
+    border-radius: 1px ;
+}
+.menu-s-3-list3 ul{
+    list-style-type: none;
+}
+.menu-s-3-list3 li{
+    margin: 20px 0;
+    color:rgb(144,154,167) ;
+}
+.menu-s-3-list3 li:nth-child(1){
+    color: white;
+    font-weight: 700;
+}
+.hint-2{
+    width: 30px;
+    height: 25px;
+    float: right;
+    border-radius:20px;
+    text-align: center;
+    line-height: 27px;
+    background: #2499f1;
+    color: white;
+}
+.warn{
+    width: 25px;
+    height: 25px;
+    float: right;
+    border-radius:20px;
+    text-align: center;
+    line-height: 25px;
+    background: red;
+    color: white;
+}
+.menu-stting-4{
+    flex: 1;
+}
+.money{
+    position: absolute;
+    bottom: 10px;
+    height: 5%;
+    list-style-type: none;
+    color: rgb(248, 248, 248);
+}
+.money li{
+    display: inline;
+}
+.money li:nth-child(2){
+    float: right;
+}
+.slider {
+    width: 190px;
+    height: 5px;
+    position: absolute;
+    margin-top:13px;
+}
+.border{
+    margin-top: 13px;
+    border-radius: 3px;
+    border-bottom:5px solid #53575f;
+}
+.chat{
+    margin-left: 350px;
+    background: white;
+}
+.chat-header{
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid rgb(230,233,236);
+}
+.chat-messages{
+    font-size: 30px;
+    padding: 25px;
+    font-weight: 100;
+    color:black;
+    opacity: 0.7;
+    display: inline-block;
+}
+.state{
+    position: fixed;
+    float: right;
+    width: 200px;
+    position: relative;
+}
+.state img{
+    margin-top: 15px;
+}
+.state img:nth-last-child(1){
+    position: absolute;
+    left: 85%;
+    top:20px;
+}
+.state .jordan{
+    color: dodgerblue;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+.state .administrator{  
+    color: rgb(144,154,167);
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+.chat-left{
+    width: 400px ;
+    border-right:1px solid rgb(230,233,236);
+}
+/* 搜索框 */
+.chat-l-search{
+    width: 400px;
+    height: 70px;
+    position: relative;
+}
+.chat-l-search input{
+    height: 40px;
+    width: 340px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid rgb(230,233,236);
+    opacity: 0.8;
+    top:15px;
+    left: 30px;
+    padding-left: 10px;
+    font-weight: 700;
+    color: rgb(144,154,167);
+}
+.chat-l-search img{
+    position: absolute;
+    top: 40%;
+    right: 40px;
+}
+/* 联系人1号 */
+
+.chat-1-person{
+    width: 400px;
+    height: 130px;
+    border-top: 1px solid rgb(230,233,236);
+    border-left: 3px solid rgb(39,156,244);
+}
+/* 上部信息 */
+.person-list{
+    width: 360px;
+    height: 50px;
+    margin: 10px 20px;
+}
+.person-left{
+    width: 250px;
+    height: 50px;
+    float: left;
+}
+.person-left img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 30px;
+    float: left;
+}
+.person-right{
+    width: 150px;
+    height: 50px;
+    float: left;
+    margin: 12px;
+}
+.dot{
+    height: 9px; 
+    width: 9px;
+    float: left;
+    border-radius: 5px;
+    background-color: rgb(39,156,244);
+}
+
+.person-right p:nth-child(2){
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(39,156,244);
+}
+
+.person-right p:nth-child(3){
+    margin-left: -5px;
+    font: size 13px;
+    color: rgb(191, 198, 208);
+}
+.person-inter{
+    width: 400px;
+    height: 50px;
+}
+.person-inter p{
+    width: 300px;
+    font-size: 13px;
+    float: left;
+    display: block;
+    margin:5px 0 10px 35px ;
+    color: rgb(98, 104, 111);
+}
+.number4{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    line-height:25px;
+    text-align: center;
+    color: white;
+    background-color: rgb(39,156,244);
+    margin-top: 30px;
+    margin-left: 350px;
+}
+/* 联系人2号 */
+/* .chat-1-person1{
+    width: 400px;
+    height: 100px;
+    border: 1px solid rgb(230,233,236);
+    border-top: 0;
+    border-left: 0;
+    margin-left: -3px;
+}
+.person1-image img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 30px;
+    float: left;
+}
+.person1-list{
+    margin: 0 20px 20px 20px;
+}
+.list1-name{
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-left: 60px;
+    color: rgb(34,44,60);
+    opacity: 0.7;
+}
+
+.list1-name span{
+    float: right;
+    color: rgb(191, 198, 208);
+}
+
+.list1-state{
+    margin-left: 20px;
+    float: left;
+    color: rgb(191, 198, 208);
+}
+.person1-inter{
+    width: 400px;
+    height: 60px;
+}
+.person1-inter p{
+    width: 300px;
+    font-size: 13px;
+    float: left;
+    display: block;
+    margin:10px 0 10px 20px ;
+    color: rgb(98, 104, 111);
+}
+/* 联系人3号 */
+.chat-1-person3{
+    width: 400px;
+    height: 100px;
+    border: 1px solid rgb(230,233,236);
+    border-top: 0;
+    border-left: 0;
+    margin-top: -4px;
+}
