@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        border: solid 3px;
+        border-style:  outset;
+        border-color:#000;
+        height: 2000px;
+        width: 1200px;
+        margin: auto;
+    }
+    .rectangle1{
+        height: 2000px;
+        width: 400px;
+        background: rgb(252,252,252);
+        background: linear-gradient(90deg, rgba(252,252,252,0.643638429187593) 0%, rgba(0,253,197,1) 100%);
+        background-size: contain;
+        border: solid none;
+        float: left;
+    }
+    .rectangle2{
+        height: 2000px;
+        width: 800px;
+        background-color: rgba(216, 240, 207, 0.623);
+        border: solid none;
+        float: right;
+    }
+   .rectangle1 > img{
+      width: 250px;
+      height: 250px;
+      border: 5px solid black;
+      margin:70px 70px;
+      border-radius: 50px 50px;
+   }
+    
+    .name{
+        font-size: 30px;
+        color: white;
+        margin-left:175px ;
+    }
+    .box-border{
+        height: 1px;
+        width: 200px;
+        border-bottom:  5px solid teal; 
+        margin:0 100px  ;
+        float: left;
+        
+    }
+    
+    .describe ul{
+        color:teal;
+        list-style-type: none;
+        float: left;
+        margin-left: 100px; ;
+        
+     
+    }
+    .box-border2{
+        height: 1px;
+        width: 350px;
+        border-bottom:  2px solid teal; 
+        margin:0 25px  ;
+        float: left;
+    }
+  
+    .describe p{
+        font-size: 40px;
+        font-weight: bold;
+        color:teal;
+        float: left;
+        margin:0 100px 0 ;
+       
+    }
+   
+       .technology ul{
+        font-size:20px ;
+        color: white;
+        list-style-type: none;
+        float: left;
+        margin:10px 125px 0 ;
+        padding-left: 0px;
+    }
+    .technology  ul li{
+        display: flex;
+        list-style: none;
+    }
+   
+    .technology p{
+        font-size: 25px;
+        color:teal;
+        float: left;
+       
+    }
+    .base {
+            position: fixed;
+            height: 50px;
+            z-index: 9999;
+            float: left;
+            margin-top: 1250px;
+            margin-left: 80px;
+    }
+    .base img{
+        width: 50px;
+        height: 50px;
+    }
+   
+
+    .box1 .experience , .box2 .practice , .box3 .eduction{
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 200px;
+    }
+    .box1 > :first-child {
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-left: 500px;
+    
+    }
+    .box1 a{
+        text-decoration: none;
+        color: red;
+        float: right;
+    }
+    .box1 a:hover{
+        color: yellow;
+    }
+    .box1 .polyvia{
+        font-size: 30px;
+        color: teal;
+    }
+    .technology0 span .technology1 span{
+        text-decoration: none;
+        padding: 1em 2em;
+    }
+    .box1 .technology0 span,.box2 .technology1 span{
+        color: white;
+        border: solid 1px black;
+        background-color: turquoise
+
+    }
+    .box1 .technology0 span:hover,.box2 .technology1 span:hover{
+        color: #000000;
+    }
+
+  
+   
+    .box1 .polyvia , .box2 .inter , .box3 .university{
+        font-size: 35px;
+        font-weight: bold;
+        color: teal;
+        text-decoration: underline;
+    }
+    
+    .box3 .data{
+        font-size: 15px;
+        color: teal;
+    }
+</style>
+<body>
+    <script>
+        function myFunction(){
+            document.getElementById("internet").innerHTML="再见吧旅人";
+        }
+    </script>
+    <div class="rectangle1">
+    <!-- 导入简历图像 -->
+    <!-- 导入圆框,图片均导入到了w3c下html的img中了 -->
+    <img src="./don.jpg" alt="don">
+    
+    <!-- 姓名 -->
+    <div class=" name">
+        <p>唐</p>
+    </div>
+     <!--项目经历顶部线条  -->
+     <div class="box-border"></div>
+    <!-- 个人描述 -->
+    <div class="describe">
+      <ul>
+        <li>一个热血青年</li>
+        <li>一个咸鱼吉他手</li>
+        <li>一个沉默的羔羊</li>
+      </ul>
+       <!--项目经历顶部线条  -->
+     <div class="box-border2"></div>
+      <p>前端工程师</p>
+    </div>
+    <!-- 会的前端技术 -->
+    <div class="technology">
+       <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jQuery</li>
+        <li>php</li>
+        <li>webGL</li>
+       </ul> 
+       <p>热爱前端工作的前端工程师，希望能够在前端工作中发光发热。</p>
+    </div>
+    <div class="base">
+        <img  src="email.png" alt="email "/>  <a href="#">don@qq.com</a><br>
+        <img  src="panguin.png" alt="panguin "/><a href="#">123456</a><br>
+        <img   src="wechat.png" alt="wechat "/><a href="#">don123456</a><br>
+    </div>
+</div>
+    <div class="rectangle2">
+     <!--项目经历  -->
+    <div class="box1">
+         <span>在线简历：</span>  
+         <a href="http：//www.don.com ">don@.com</a>
+        <p class="experience">项目经历</p>
+        <p class="polyvia">Polyvia</p>
+        <p class="technology0">
+            <span>webGL</span>
+            <span>着色器</span>
+            <span>JavaScript</span>
+            <span>图像处理</span>
+        </p>
+        <p>Low.ploy风格视频、图像处理</p>
+        </div>
+
+         <!--实习经历  -->
+    <div class="box2">
+        <p class="practice"><span>实习经历</span></p>
+        <p  id="internet">英特尔</p>
+        <button  id="hello" onclick="myFunction()">展开</button>
+        <!-- 用p+span将文字横向排列 -->
+
+        <p class="technology1">
+            <span>webGL</span>
+            <span>three.js</span>
+            <span>web Audio</span>
+            <span>JavaScript</span>
+        </p>
+      
+        <p> 开发了一款三维打砖游戏</p>
+        </div>
+      <!-- 教育背景 -->
+        <div class="box3">
+            <p class="eduction"><span>教育背景</span></p>
+            <p class="university"><span>椰子大学</span></p>
+            <p class="data">2019年至2020年</p>
+            <p>本科生，软件工程专业</p>
+    </div>
+</div> 
+</body>
+</html>
