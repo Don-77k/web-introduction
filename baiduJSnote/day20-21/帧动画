@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #smile{
+            background-image: url(/感受js/erik_ce204002.jpg);
+            background-repeat: no-repeat;
+            width: 480px;
+            height: 480px;
+            margin: 0 auto ;
+            background-position: 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="smile"></div>
+    </div>
+    <script>
+        const smile = document.getElementById('smile');
+        let i = 0,flag = true;
+        function smileFun() {
+        if(flag){
+            i = i - 480;
+            if(i === -7680){
+                flag = false;
+            }
+        }else{
+            i = i+480;
+            if(i === 0){
+                flag = true;
+            }
+
+        }
+         smile.style.backgroundPosition = "0px "+ i + 'px'
+        }
+        setInterval(smileFun,100)
+    </script>
+</body>
+</html>
