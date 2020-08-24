@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+    <button id="fade-btn">淡出</button>
+    <script>
+/*    const obj = document.getElementById('fade-obj');
+    const btn = document.getElementById('fade-btn');
+
+    let id;
+    let flag = 0;
+    btn.onclick = function(){
+        function opacity(){
+            obj.style.filter = "alpha(opacity = '+flag+')";
+            flag++;
+        }
+        function opacityVanish(){
+            obj.style.filter = "alpha(opacity = '+flag+')";
+            flag--;
+        }
+        //动画过程中按钮不可被点击
+        if (btn.value == "淡出"){
+            //按钮不可被点击
+            btn.disabled = true;
+            //动画开始
+            id = window.setInterval(opacity() , 8000);
+
+        }else{
+            //按钮不可被点击
+            btn.disabled = true;
+            //动画开始
+            id = window.setInterval(opacityVanish() , 8000);
+        }
+        if(flag == 1){
+            window.clearInterval(id);
+            btn.disabled = false;
+            this.value="淡入";
+           }
+    }*/
+
+    //别人写的
+    const fadeBtn = document.getElementById('fade-btn');
+        const fadeObj = document.getElementById('fade-obj');
+        let i = 1;
+
+
+
+        function fadeOut() {
+            fadeBtn.disabled = true;
+
+            const id = window.setInterval(function () {
+                if (i <= 0) {
+                    fadeBtn.disabled = false;
+                    fadeBtn.innerText = '淡入';
+                    window.clearInterval(id);
+                }
+                fadeObj.style.opacity = i;
+                i = i - 0.1;
+            }, 200);
+        }
+
+        function fadeIn() {
+            fadeBtn.disabled = true;
+            i = i + 0.1;
+            fadeObj.style.opacity = i;
+            const id = setTimeout('fadeIn()', 200);
+            if (i >= 1) {
+                fadeBtn.disabled = false;
+                fadeBtn.innerText = '淡出';
+                clearTimeout(id);
+            }
+        }
+
+
+        fadeBtn.onclick = function () {
+            if (fadeBtn.innerText == '淡出') {
+                fadeOut();
+            } else if (fadeBtn.innerText == '淡入') {
+                fadeIn();
+
+            }
+
+
+        }
+    </script>
+</body>
+</html>
