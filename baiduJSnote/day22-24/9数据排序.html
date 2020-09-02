@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [43, 54, 4, -4, 84, 100, 58, 27, 140];
+        function compareNumber(a , b){
+            return a - b;
+        }
+        console.log("arr size compare:" + arr.sort(compareNumber));
+        
+        var arr = ['apple', 'dog', 'cat', 'car', 'zoo', 'orange', 'airplane'];
+        console.log("a-z compare:" + arr.sort());
+        //相反情况 reverse && 降序排列 b-a
+        console.log("z-a compare:" + arr.reverse());
+
+        var arr = [[10, 14], [16, 60], [7, 44], [26, 35], [22, 63]];
+        function ascend (x,y){
+            return y[1] - x[1];
+        };
+        console.log("the second size compare:" + arr.sort(ascend));
+        //将value值从小到大排序
+        var arr = [
+    {
+        id: 1,
+        name: 'candy',
+        value: 40
+    }, {
+        id: 2,
+        name: 'Simon',
+        value: 50
+    }, {
+        id: 3,
+        name: 'Tony',
+        value: 45
+    }, {
+        id: 4,
+        name: 'Annie',
+        value: 60
+    }
+];
+//将数组进行大小排列
+
+arr.sort(function (a, b) {
+  return (b.id - a.id)
+});
+    </script>
+</body>
+</html>
