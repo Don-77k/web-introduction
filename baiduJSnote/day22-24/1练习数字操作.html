@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label>Number A:<input id="radio-a" type="radio" name="math-obj" value="a"></label><input id="num-a"
+            type="text">
+        <label>Number B:<input id="radio-b" type="radio" name="math-obj" value="b"></label><input id="num-b"
+            type="text">
+    </div>
+
+    <div>
+        <button>判断当前选中的输入框输入内容是否为数字</button>
+        <button>把 A 四舍五入为 B 个小数位数的数字</button>
+        <button>当前选中数字的绝对值</button>
+        <button>对当前选中的数字进行上舍入</button>
+        <button>对当前选中的数字进行下舍入</button>
+        <button>把当前选中的数字四舍五入为最接近的整数</button>
+        <button>返回 A 和 B 中的最高值</button>
+        <button>返回 A 和 B 中的最低值</button>
+    </div>
+    <p id="result"></p>
+    <script>
+        const box1 = document.getElementsByTagName('div');
+        const radioA = document.getElementById('radio-a');
+        const radioB = document.getElementById('radio-b');
+        const inputA = document.getElementById('num-a');
+        const inputB = document.getElementById('num-b');
+        const btn = document.getElementsByTagName('button');
+
+        radioA.checked = true;
+        //循环button按钮
+        // for(i = 0; i < btn.length; i++){
+        //     //查找被点击的button
+        //     btn[i].onclick = function{
+        //         if (btn[i] = 1){
+        //             for(j = 0; j < radio.length; j++){
+        //                 if(radio[j].checked = true){
+        //                     inputA.value
+
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        function btnNumber() {
+            let n = Number(inputA.value);
+            let m = Number(inputB.value);
+            if (!isNAN(n) && !isNAN(m) && n != '' && m != '') {
+                return true;
+            } else {
+                console.error("输入框中有一个或两个不是数字");
+                return false;
+            }
+        }
+        btn[0].addEventListener("click", function () {
+            // 判断当前选中的输入框输入内容是否为数字
+            var num;
+            if (radioA.checked) {
+                num = inputA.value;
+            } else if (radioB.checked) {
+                num = inputB.value;
+            }
+
+            var n = Number(num);
+            if (isNaN(n)) {
+                console.error("输入的不是数字");
+            } else {
+                document.getElementById("result").innerHTML = "当前选中的输入框输入内容是数字";
+            }
+
+        })
+
+        btn[1].addEventListener("click" , function(){
+            
+        })
